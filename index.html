@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quinta Doña Elvira | Eventos Exclusivos en Mendoza</title>
+  <meta name="description" content="Quinta Doña Elvira: dos hectáreas de naturaleza y elegancia para eventos inolvidables en Mendoza. Carpa beduina, parrilla criolla y parque con piscina.">
+  <meta name="theme-color" content="#1a1714">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav id="navbar" class="navbar" aria-label="Navegacion principal">
+    <div class="navbar-inner">
+      <a href="#hero" class="navbar-brand">Quinta Doña Elvira</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu de navegacion" aria-expanded="false">
+        <span class="menu-line menu-line--top"></span>
+        <span class="menu-line menu-line--mid"></span>
+        <span class="menu-line menu-line--bot"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ SIDE MENU ============ -->
+  <div id="menu-overlay" class="menu-overlay" aria-hidden="true"></div>
+  <aside id="side-menu" class="side-menu" aria-hidden="true" role="dialog" aria-label="Menu de navegacion">
+    <div class="side-menu-header">
+      <button id="menu-close" class="menu-close" aria-label="Cerrar menu">
+        <span class="close-line close-line--1"></span>
+        <span class="close-line close-line--2"></span>
+      </button>
+    </div>
+    <nav class="side-menu-nav">
+      <ul>
+        <li><a href="#hero" class="side-menu-link" data-menu-link>Inicio</a></li>
+        <li class="side-menu-divider"></li>
+        <li><a href="#banquete" class="side-menu-link" data-menu-link>El Banquete</a></li>
+        <li class="side-menu-divider"></li>
+        <li><a href="#fuego" class="side-menu-link" data-menu-link>Fuego y Tradicion</a></li>
+        <li class="side-menu-divider"></li>
+        <li><a href="#eventos" class="side-menu-link" data-menu-link>Eventos</a></li>
+        <li class="side-menu-divider"></li>
+        <li><a href="#contacto" class="side-menu-link" data-menu-link>Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="side-menu-footer">
+      <p class="side-menu-location">Mendoza, Argentina</p>
+    </div>
+  </aside>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section id="hero" class="hero">
+    <video autoplay muted loop playsinline class="hero-video" aria-hidden="true">
+      <source src="Video Project.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Mendoza, Argentina</p>
+      <h1 class="hero-title">
+        Bienvenidos a<br>
+        <span class="hero-title-accent">Quinta Doña Elvira</span>
+      </h1>
+      <p class="hero-subtitle">Dos hectareas de naturaleza y elegancia para eventos que trascienden lo ordinario</p>
+      <a href="#banquete" class="btn btn-hero" id="btn-hero">Descubrir</a>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ BANQUETE Y CARPA ============ -->
+  <section id="banquete" class="banquete">
+    <div class="banquete-bg">
+      <img src="120195610_125964032590786_102636951195787721_n.jpg" alt="" class="banquete-bg-img" loading="lazy">
+    </div>
+    <div class="banquete-overlay"></div>
+    <div class="banquete-content">
+      <div class="banquete-photo reveal-element" data-reveal="left">
+        <div class="banquete-photo-frame">
+          <img src="120195610_125964032590786_102636951195787721_n.jpg" alt="Interior de la carpa beduina con mesas elegantemente servidas" loading="lazy">
+        </div>
+      </div>
+      <div class="banquete-text reveal-element" data-reveal="right">
+        <h2 class="section-title">El Banquete<br><span class="title-thin">y la Carpa</span></h2>
+        <div class="title-line"></div>
+        <p class="section-description">Capacidad para 300 personas bajo la calidez de nuestra carpa beduina, donde la elegancia se encuentra con la naturaleza.</p>
+        <a href="#contacto" class="btn" id="btn-banquete">Consultar disponibilidad</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FUEGO Y TRADICION ============ -->
+  <section id="fuego" class="fuego">
+    <div class="fuego-content">
+      <div class="fuego-text reveal-element" data-reveal="left">
+        <h2 class="section-title">Fuego<br><span class="title-thin">y Tradicion</span></h2>
+        <div class="title-line"></div>
+        <p class="section-description">El sabor de Mendoza. Parrilla criolla y fuegos que cuentan historias.</p>
+        <p class="section-detail">Asado al asador, cordero a la llama y las recetas que nos definen. Cada evento tiene el aroma inconfundible de la lena y la brasa viva.</p>
+      </div>
+      <div class="fuego-image-wrapper reveal-element" data-reveal="right">
+        <div class="fuego-frame">
+          <img src="116705658_625325484855265_8888521004424591536_n.jpg" alt="Parrilla criolla con fuego vivo y carnes al asador" class="fuego-img" loading="lazy">
+          <div class="fuego-flame-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENTOS DE DIA ============ -->
+  <section id="eventos" class="eventos">
+    <div class="pirca-edge" aria-hidden="true"></div>
+    <div class="eventos-visual">
+      <img src="103463624_282486846273291_5988557572196787826_n.jpg" alt="Piscina con pirca de piedra y parque iluminado" class="eventos-img" loading="lazy">
+      <div class="eventos-img-overlay"></div>
+    </div>
+    <div class="eventos-content">
+      <div class="eventos-text reveal-element" data-reveal="up">
+        <h2 class="section-title section-title--light">Eventos<br><span class="title-thin">de Dia</span></h2>
+        <div class="title-line title-line--gold"></div>
+        <p class="section-description section-description--light">Dos hectareas de parque, piscina con pirca de piedra natural y espacios versatiles para eventos diurnos y nocturnos.</p>
+      </div>
+      <div class="eventos-features reveal-element" data-reveal="up">
+        <div class="feature-item">
+          <span class="feature-number">2</span>
+          <span class="feature-label">Hectareas<br>de parque</span>
+        </div>
+        <div class="feature-divider"></div>
+        <div class="feature-item">
+          <span class="feature-number">300</span>
+          <span class="feature-label">Capacidad<br>de personas</span>
+        </div>
+        <div class="feature-divider"></div>
+        <div class="feature-item">
+          <span class="feature-number">24</span>
+          <span class="feature-label">Horas de<br>versatilidad</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER / CONTACTO ============ -->
+  <footer id="contacto" class="footer">
+    <div class="footer-content">
+      <div class="footer-brand reveal-element" data-reveal="up">
+        <h2 class="footer-title">Quinta Doña Elvira</h2>
+        <div class="title-line title-line--center"></div>
+        <p class="footer-tagline">Donde cada evento se convierte en un recuerdo eterno</p>
+      </div>
+      <div class="footer-contact reveal-element" data-reveal="up">
+        <div class="footer-contact-item">
+          <span class="contact-label">Ubicacion</span>
+          <span class="contact-value">Mendoza, Argentina</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="contact-label">Consultas</span>
+          <a href="mailto:contacto@quintadonaelvira.com" class="contact-value contact-link">contacto@quintadonaelvira.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <span class="contact-label">Telefono</span>
+          <a href="tel:+5492615555555" class="contact-value contact-link">+54 9 261 555 5555</a>
+        </div>
+      </div>
+      <a href="#hero" class="btn btn-footer" id="btn-contacto">Solicitar presupuesto</a>
+    </div>
+    <div class="footer-bottom">
+      <p>Quinta Doña Elvira. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -82,20 +82,16 @@ body {
   /* Stone texture via CSS */
   background-image:
     url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E"),
-    repeating-linear-gradient(
-      0deg,
+    repeating-linear-gradient(0deg,
       transparent,
       transparent 3px,
       rgba(139, 115, 85, 0.015) 3px,
-      rgba(139, 115, 85, 0.015) 6px
-    ),
-    repeating-linear-gradient(
-      90deg,
+      rgba(139, 115, 85, 0.015) 6px),
+    repeating-linear-gradient(90deg,
       transparent,
       transparent 5px,
       rgba(100, 80, 60, 0.01) 5px,
-      rgba(100, 80, 60, 0.01) 10px
-    );
+      rgba(100, 80, 60, 0.01) 10px);
 }
 
 img {
@@ -192,11 +188,9 @@ ul {
   overflow: hidden;
   transition: var(--transition-smooth);
   /* Slightly irregular edges — rustic feel */
-  clip-path: polygon(
-    1% 0%, 99% 2%, 100% 5%,
-    99% 95%, 98% 100%, 2% 98%,
-    0% 96%, 0.5% 4%
-  );
+  clip-path: polygon(1% 0%, 99% 2%, 100% 5%,
+      99% 95%, 98% 100%, 2% 98%,
+      0% 96%, 0.5% 4%);
 }
 
 .btn::before {
@@ -244,12 +238,10 @@ ul {
   background-color: var(--stone-mid);
   background-image:
     url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)' opacity='0.12'/%3E%3C/svg%3E"),
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       rgba(42, 36, 32, 0.97) 0%,
       rgba(61, 53, 48, 0.97) 50%,
-      rgba(42, 36, 32, 0.97) 100%
-    );
+      rgba(42, 36, 32, 0.97) 100%);
   box-shadow:
     0 2px 20px rgba(0, 0, 0, 0.4),
     0 1px 0 rgba(139, 115, 85, 0.1);
@@ -352,18 +344,14 @@ ul {
   background-color: var(--wood-dark);
   background-image:
     url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23w)' opacity='0.07'/%3E%3C/svg%3E"),
-    repeating-linear-gradient(
-      90deg,
+    repeating-linear-gradient(90deg,
       transparent 0px,
       rgba(60, 48, 40, 0.3) 1px,
       transparent 2px,
-      transparent 12px
-    ),
-    linear-gradient(
-      180deg,
+      transparent 12px),
+    linear-gradient(180deg,
       rgba(30, 26, 23, 1) 0%,
-      rgba(42, 36, 32, 1) 100%
-    );
+      rgba(42, 36, 32, 1) 100%);
   border-left: 1px solid rgba(139, 115, 85, 0.15);
   display: flex;
   flex-direction: column;
@@ -483,13 +471,12 @@ ul {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(
-      to bottom,
-      rgba(18, 16, 16, 0.2) 0%,
-      rgba(18, 16, 16, 0.05) 40%,
-      rgba(18, 16, 16, 0.3) 65%,
-      rgba(18, 16, 16, 0.85) 100%
-    );
+    linear-gradient(to bottom,
+      rgba(18, 16, 16, 0.35) 0%,
+      rgba(18, 16, 16, 0.25) 30%,
+      rgba(18, 16, 16, 0.5) 55%,
+      rgba(18, 16, 16, 0.75) 75%,
+      rgba(18, 16, 16, 0.92) 100%);
 }
 
 .hero-content {
@@ -558,8 +545,17 @@ ul {
 }
 
 @keyframes scrollPulse {
-  0%, 100% { opacity: 0.3; transform: scaleY(0.6); }
-  50% { opacity: 1; transform: scaleY(1); }
+
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scaleY(0.6);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
 }
 
 @keyframes heroFadeIn {
@@ -567,6 +563,7 @@ ul {
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -601,12 +598,10 @@ ul {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       rgba(26, 23, 20, 0.85) 0%,
       rgba(26, 23, 20, 0.6) 50%,
-      rgba(26, 23, 20, 0.8) 100%
-    );
+      rgba(26, 23, 20, 0.8) 100%);
 }
 
 .banquete-content {
@@ -644,12 +639,10 @@ ul {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    145deg,
-    rgba(201, 168, 76, 0.08) 0%,
-    transparent 40%,
-    rgba(0, 0, 0, 0.15) 100%
-  );
+  background: linear-gradient(145deg,
+      rgba(201, 168, 76, 0.08) 0%,
+      transparent 40%,
+      rgba(0, 0, 0, 0.15) 100%);
   pointer-events: none;
 }
 
@@ -673,11 +666,9 @@ ul {
   padding-bottom: 6rem;
   /* Subtle warm ambient glow */
   background:
-    radial-gradient(
-      ellipse 80% 60% at 70% 50%,
+    radial-gradient(ellipse 80% 60% at 70% 50%,
       rgba(204, 119, 34, 0.06) 0%,
-      transparent 70%
-    ),
+      transparent 70%),
     transparent;
 }
 
@@ -709,21 +700,17 @@ ul {
   border-radius: 0;
   /* Flame-breaking effect: irregular mask that lets the fire blend into the dark background */
   -webkit-mask-image:
-    radial-gradient(
-      ellipse 130% 95% at 50% 45%,
+    radial-gradient(ellipse 130% 95% at 50% 45%,
       black 50%,
       rgba(0, 0, 0, 0.8) 65%,
       rgba(0, 0, 0, 0.4) 80%,
-      transparent 100%
-    );
+      transparent 100%);
   mask-image:
-    radial-gradient(
-      ellipse 130% 95% at 50% 45%,
+    radial-gradient(ellipse 130% 95% at 50% 45%,
       black 50%,
       rgba(0, 0, 0, 0.8) 65%,
       rgba(0, 0, 0, 0.4) 80%,
-      transparent 100%
-    );
+      transparent 100%);
   filter: contrast(1.1) saturate(1.15);
 }
 
@@ -734,12 +721,10 @@ ul {
   left: 10%;
   right: 10%;
   height: 60%;
-  background: radial-gradient(
-    ellipse at 50% 100%,
-    rgba(232, 148, 10, 0.15) 0%,
-    rgba(204, 119, 34, 0.08) 40%,
-    transparent 80%
-  );
+  background: radial-gradient(ellipse at 50% 100%,
+      rgba(232, 148, 10, 0.15) 0%,
+      rgba(204, 119, 34, 0.08) 40%,
+      transparent 80%);
   filter: blur(30px);
   pointer-events: none;
   z-index: -1;
@@ -763,15 +748,13 @@ ul {
   background: var(--stone-dark);
   background-image:
     url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
-  clip-path: polygon(
-    0% 0%, 100% 0%,
-    100% 30%,
-    97% 55%, 94% 40%, 90% 65%, 87% 50%, 83% 75%, 80% 55%,
-    76% 80%, 73% 60%, 70% 85%, 66% 55%, 63% 78%, 60% 50%,
-    56% 72%, 53% 48%, 50% 75%, 46% 55%, 43% 80%, 40% 52%,
-    36% 70%, 33% 45%, 30% 68%, 26% 50%, 23% 72%, 20% 48%,
-    16% 65%, 13% 42%, 10% 60%, 7% 38%, 4% 55%, 0% 35%
-  );
+  clip-path: polygon(0% 0%, 100% 0%,
+      100% 30%,
+      97% 55%, 94% 40%, 90% 65%, 87% 50%, 83% 75%, 80% 55%,
+      76% 80%, 73% 60%, 70% 85%, 66% 55%, 63% 78%, 60% 50%,
+      56% 72%, 53% 48%, 50% 75%, 46% 55%, 43% 80%, 40% 52%,
+      36% 70%, 33% 45%, 30% 68%, 26% 50%, 23% 72%, 20% 48%,
+      16% 65%, 13% 42%, 10% 60%, 7% 38%, 4% 55%, 0% 35%);
 }
 
 .eventos-visual {
@@ -792,13 +775,11 @@ ul {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(
-      to bottom,
+    linear-gradient(to bottom,
       rgba(26, 23, 20, 0.5) 0%,
       rgba(26, 23, 20, 0.3) 40%,
       rgba(26, 23, 20, 0.7) 80%,
-      rgba(26, 23, 20, 0.95) 100%
-    );
+      rgba(26, 23, 20, 0.95) 100%);
 }
 
 .eventos-content {
@@ -853,12 +834,10 @@ ul {
 .feature-divider {
   width: 1px;
   height: 50px;
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    var(--gold-dim),
-    transparent
-  );
+  background: linear-gradient(to bottom,
+      transparent,
+      var(--gold-dim),
+      transparent);
 }
 
 /* ---------- FOOTER ---------- */
@@ -868,13 +847,11 @@ ul {
   background-color: var(--stone-darkest);
   background-image:
     url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)' opacity='0.05'/%3E%3C/svg%3E"),
-    repeating-linear-gradient(
-      90deg,
+    repeating-linear-gradient(90deg,
       transparent 0px,
       rgba(50, 40, 34, 0.2) 1px,
       transparent 2px,
-      transparent 16px
-    );
+      transparent 16px);
   border-top: 1px solid rgba(139, 115, 85, 0.1);
 }
 
@@ -1142,6 +1119,7 @@ ul {
 
 /* ---------- REDUCED MOTION ---------- */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
